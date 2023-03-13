@@ -1,0 +1,7 @@
+@use './style-variabes/colors.scss' as colors;
+
+* {
+  color: colors.$primary-color;
+  margin: 0;
+  padding: 0;
+}

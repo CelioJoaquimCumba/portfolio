@@ -1,0 +1,47 @@
+@use '../../style-variables/colors.scss' as colors;
+@use '../../style-variables/breakpoints.scss' as breakpoints;
+
+.nav-bar {
+    display: flex;
+    background-color: colors.$background-color;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    
+    & .nav-title {
+        padding-left: 1rem;
+        flex-grow: 0.8;
+    }
+
+    & .nav-items {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        
+        & .nav-item {
+            border: 0.1rem solid colors.$primary-color;
+            border-style: none solid none none;
+            &:first-child {
+                border-left-style: solid;
+            }
+        }
+    }
+    & .nav-item , & .nav-button {
+        padding: 1rem;
+    }
+    & .nav-button {
+        color: colors.$tertiary-color;
+        background-color: colors.$background-color;
+        border: 0.1rem solid colors.$tertiary-color
+    }
+}
+@media (max-width: breakpoints.$tablet-breakpoint) {
+    .nav-bar {
+        padding: 1.5rem;
+        justify-content: space-between;
+        & .nav-items, & .nav-button {
+            display: none;
+        }
+    }
+}
