@@ -4,20 +4,23 @@
 .nav-bar {
     display: flex;
     background-color: colors.$background-color;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     padding: 0.5rem;
     flex-wrap: wrap;
     
     & .nav-title {
+        align-self: center;
         padding-left: 1rem;
         flex-grow: 0.8;
+        color: colors.$secondary-color
     }
 
     & .nav-items {
         list-style: none;
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
         
         & .nav-item {
             border: 0.1rem solid colors.$primary-color;
@@ -35,13 +38,27 @@
         background-color: colors.$background-color;
         border: 0.1rem solid colors.$tertiary-color
     }
+    & .nav-menu {
+        display: none;
+    }
 }
 @media (max-width: breakpoints.$tablet-breakpoint) {
     .nav-bar {
-        padding: 1.5rem;
+        padding: 1.0rem;
         justify-content: space-between;
         & .nav-items, & .nav-button {
             display: none;
         }
+        & .nav-menu {
+            display: flex;
+            
+        }
     }
 }
+
+
+$primary: purple;
+$danger: red;
+
+/* finally, import Bootstrap */
+@import "../../../node_modules/bootstrap/";
