@@ -23,15 +23,23 @@
         align-items: center;
         
         & .nav-item {
+            display: flex;
             border: 0.1rem solid colors.$primary-color;
             border-style: none solid none none;
             &:first-child {
                 border-left-style: solid;
             }
+            & nav-link {
+                width: max-content;
+                height:max-content;
+            }
         }
     }
-    & .nav-item , & .nav-button {
+    & .nav-item .nav-link , & .nav-button {
         padding: 1rem;
+        &:hover {
+            background-color: colors.$container-background-color;
+        }
     }
     & .nav-button {
         color: colors.$tertiary-color;
