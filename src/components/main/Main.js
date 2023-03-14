@@ -2,9 +2,9 @@ import CodeTag from "../code-tags/CodeTag";
 import './Main.scss'
 function Main() {
     return ( 
-        <main className="main">
+        <main>
             <CodeTag tag="main">
-                hello
+                <p>main</p>
             </CodeTag>
         </main>
      );
