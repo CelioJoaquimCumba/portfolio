@@ -1,0 +1,5 @@
+@use '../../style-variables/colors.scss' as colors;
+
+main {
+    background-color: colors.$background-color;
+}
