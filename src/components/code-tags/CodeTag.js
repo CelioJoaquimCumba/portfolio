@@ -1,10 +1,11 @@
+import './CodeTag.scss'
 function CodeTag({ children, tag }) {
   return (
-    <>
+    <div className="code-tag">
       <p>{`<${tag}>`}</p>
-        <div>{children}</div>
+      <div className="code-tag-content">{children}</div>
       <p>{`</${tag}>`}</p>
-    </>
+    </div>
   );
 }
 
