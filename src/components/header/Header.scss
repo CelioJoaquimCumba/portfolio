@@ -1,0 +1,42 @@
+@use '../../style-variables/breakpoints.scss' as breakpoints;
+@use '../../style-variables/colors.scss' as colors;
+.header {
+    display: grid;
+    grid-template-columns: 25% auto ;
+    grid-template-rows: auto;
+    grid-template-areas: 'profile info-container';
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    & .profile {
+        grid-area: profile;
+    }
+    
+    & .info-container {
+        grid-area: info-container;
+        word-wrap: break-word;
+
+        & .info-items {
+            & .info-item {
+                color: colors.$tertiary-color;
+            }
+        }
+        & .social-links {
+            display: flex;
+            list-style: none;
+            gap: 1rem;
+        }
+
+
+    }
+}
+
+@media (max-width: breakpoints.$phone-breakpoint) {
+    .header {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+            grid-template-areas: 'profile' 'info-container';
+            
+    }
+}
