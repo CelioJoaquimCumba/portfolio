@@ -1,5 +1,5 @@
 @use '../../../../style-variables/colors.scss' as colors;
-
+@use '../../../../style-variables/breakpoints.scss' as breakpoints;
 .summary {
     display: grid;
     grid-template-columns: auto auto;
@@ -23,10 +23,17 @@
     width: 50%;
     & p {
         color: colors.$secondary-color;
-        font-size: large;
     }
 }
 .summary-table-content {
     grid-area: summary-table-content;
     text-decoration: underline;
+}
+
+@media(max-width: breakpoints.$phone-breakpoint) {
+    .summary {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 'summary-header' 'summary-description' 'summary-table-content';
+    }
 }
