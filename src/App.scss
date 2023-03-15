@@ -9,7 +9,10 @@
 }
 body {
 }
-body main, body footer, body header {
-  max-width: 1000px;
+body main, body footer, body header, .divider {
+  max-width: breakpoints.$max-container;
   margin: auto auto;
+}
+.divider {
+  color: colors.$tertiary-color;
 }

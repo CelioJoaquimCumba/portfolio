@@ -11,6 +11,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Header/>
+      <hr className='divider'/>
       <Main/>
     </div>
   );
