@@ -1,9 +1,15 @@
 @use './style-variables/colors.scss' as colors;
+@use './style-variables/breakpoints.scss' as breakpoints;
 
 * {
   color: colors.$primary-color;
   margin: 0;
   padding: 0;
   background-color: colors.$background-color;
-  
+}
+body {
+}
+body main, body footer, body header {
+  max-width: 1000px;
+  margin: auto auto;
 }
