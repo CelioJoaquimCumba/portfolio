@@ -8,7 +8,11 @@ function Header() {
         <CodeTag tag="header" className="header">
           <img src={profile} alt="profile" className="img-fluid profile" />
           <div className="info-container">
-            <h1 className="info-title tag">{`<h1>Hello World</h1>`}</h1>
+            <h1 className="info-title">
+              <b className='tag'>{`<h1>`}</b>
+              {`Hello World`}
+              <b className='tag'>{`</h1>`}</b>
+            </h1>
             <p className="info-paragraph">
               Hello and welcome to my portfolio! My name is Celio Joaquim Cumba,
               and I am a junior front-end developer with a strong passion for

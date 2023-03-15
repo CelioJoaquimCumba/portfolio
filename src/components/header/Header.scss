@@ -17,6 +17,12 @@
         grid-area: info-container;
         word-wrap: break-word;
 
+        & .info-title {
+            & .tag {
+                color: colors.$tertiary-color;
+            }
+        }
+
         & .info-items {
             & .info-item {
                 color: colors.$tertiary-color;
