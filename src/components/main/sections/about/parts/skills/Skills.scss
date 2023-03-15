@@ -1,0 +1,57 @@
+@use '../../../../../../style-variables/colors.scss' as colors;
+
+.skills-section {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 'skills-heading-container' 'skills-list';
+    gap: 1rem;
+    & .skills-heading-container {
+        grid-area: skills-heading-container;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0.1rem solid colors.$tertiary-color;
+    
+        & .skills-heading {
+            color: colors.$secondary-color;
+        }
+    }
+    & .skills-list {
+        grid-area: skills-list;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 1rem;
+        & .skills {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            border: 0.1rem solid;
+            & .skills-header {
+                border: solid;
+                border-width: 0 0 0.1rem 0;
+                text-align: center;
+                padding: 2rem 0;
+           }
+           & .skills-body {
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0 auto;
+                padding: 0.5rem 0;
+                & .skill-name {
+                    color: colors.$secondary-color;
+                }
+                
+           }
+        }
+    }
+}
+::-webkit-progress-bar {
+    background-color: colors.$primary-color;
+}
+
+progress::-webkit-progress-value {
+    background: colors.$tertiary-color;
+}
