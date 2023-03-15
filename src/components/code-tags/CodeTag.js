@@ -1,9 +1,9 @@
 import './CodeTag.scss'
-function CodeTag({ children, tag, className }) {
+function CodeTag({ children, tag, idAtr, classAtr, className }) {
     if (tag) {
     return (
       <div className={`code-tag`}>
-        <p>{`<${tag}>`}</p>
+        <p>{`<${tag} ${idAtr ? 'id='+idAtr : ''} ${classAtr ? 'className='+className : ''} >`}</p>
         <div className={`code-tag-content ${className}`}>{children}</div>
         <p>{`</${tag}>`}</p>
       </div>
