@@ -1,0 +1,32 @@
+@use '../../../../style-variables/colors.scss' as colors;
+
+.summary {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 'summary-header summary-header' 'summary-description summary-table-content';
+}
+.summary-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: summary-header;
+    border: 0.1rem solid colors.$tertiary-color;
+    & .summary-title {
+        color: colors.$secondary-color;
+
+    }
+
+}
+.summary-description {
+    grid-area: summary-description;
+    width: 50%;
+    & p {
+        color: colors.$secondary-color;
+        font-size: large;
+    }
+}
+.summary-table-content {
+    grid-area: summary-table-content;
+    text-decoration: underline;
+}
