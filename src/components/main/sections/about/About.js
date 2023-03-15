@@ -6,12 +6,12 @@ import Certifications from './parts/certifications/Certifications';
 import Goals from './parts/goals/Goals';
 function About() {
     return ( 
-        <CodeTag tag={"section"} idAtr={"about"}>
+        <>
             <Skills/>
             <Education/>
             <Certifications/>
             <Goals/>
-        </CodeTag>
+        </>
      );
 }
 
