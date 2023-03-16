@@ -58,7 +58,7 @@ function Education() {
                   onClick={()=>handleCurrent(index)} 
                 >
                   <div className={`education-option-container `}>
-                    {course} - {current.course}
+                    {course}
                   </div>
                 </div>
               );
