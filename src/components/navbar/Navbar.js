@@ -8,8 +8,6 @@ function Navbar() {
           {[
             "summary",
             "about me",
-            "personal",
-            "professional",
             "contact  me",
           ].map((item, index) => (
             <li className="nav-item" key={index}>
@@ -24,12 +22,6 @@ function Navbar() {
           </NavDropdown.Item>
           <NavDropdown.Item className="nav-item" href="./#about">
             About me
-          </NavDropdown.Item>
-          <NavDropdown.Item className="nav-item" href="./#personal">
-            Personal
-          </NavDropdown.Item>
-          <NavDropdown.Item className="nav-item" href="./#professional">
-            Professional
           </NavDropdown.Item>
           <NavDropdown.Item className="nav-item" href="./#contact">
             Contact me
