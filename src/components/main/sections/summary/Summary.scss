@@ -28,6 +28,10 @@
 .summary-table-content {
     grid-area: summary-table-content;
     text-decoration: underline;
+    &  a {
+        text-decoration: none;
+        color:  inherit;
+    }
 }
 
 @media(max-width: breakpoints.$phone-breakpoint) {

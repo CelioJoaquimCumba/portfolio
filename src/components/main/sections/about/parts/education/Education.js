@@ -42,7 +42,7 @@ function Education() {
       setCurrent(educations[index])
   }
     return (
-      <div className="education-section">
+      <div className="education-section" id='education'>
         <div className="education-heading-container">
           <h1 className="education-heading">Education</h1>
         </div>

@@ -2,7 +2,7 @@ import './Summary.scss'
 
 function Summary() {
     return (
-      <div className="summary">
+      <div className="summary" id="summary">
         <div className="summary-header">
           <h1 className="summary-title">Summary</h1>
         </div>
@@ -14,23 +14,44 @@ function Summary() {
         </div>
         <div className="summary-table-content">
           <ol className="summary-items">
-            <li className="summary-item">Header</li>
-            <li className="summary-item">Summary</li>
             <li className="summary-item">
-              About me
+              <a href="./#header">Header</a>
+            </li>
+            <li className="summary-item">
+              <a href="./#summary">Summary</a>
+            </li>
+
+            <li className="summary-item">
+              <a href="./#about me">About me</a>
               <ol className="summary-sub-items" type="a">
-                <li className="summary-sub-item">Skills</li>
-                <li className="summary-sub-item">Education</li>
-                <li className="summary-sub-item">Certifications</li>
-                <li className="summary-sub-item">Goals</li>
+                <li className="summary-sub-item">
+                  <a href="./#skills">Skills</a>
+                </li>
+                <li className="summary-sub-item">
+                  <a href="./#education">Education</a>
+                </li>
+                <li className="summary-sub-item">
+                  <a href="./#certifications">Certifications</a>
+                </li>
+                <li className="summary-sub-item">
+                  <a href="./#goals">Goals</a>
+                </li>
               </ol>
             </li>
-            <li className="summary-item">Contact</li>
-              <ol className="summary-sub-items" type="a">
-                <li className="summary-sub-item">Email</li>
-                <li className="summary-sub-item">Whatsapp</li>
-              </ol>
-            <li className="summary-item">Footer</li>
+            <li className="summary-item">
+              <a href="./#contact">Contact</a>
+            </li>
+            <ol className="summary-sub-items" type="a">
+              <li className="summary-sub-item">
+                <a href="./#email">Email</a>
+              </li>
+              <li className="summary-sub-item">
+                <a href="./#whatsapp">Whatsapp</a>
+              </li>
+            </ol>
+            <li className="summary-item">
+              <a>Footer</a>
+            </li>
           </ol>
         </div>
       </div>
