@@ -1,0 +1,71 @@
+@use '../../../../../../style-variables/colors.scss' as colors;
+
+.education-section {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 20% auto ;
+    grid-template-rows: auto auto;
+    grid-template-areas: 'education-heading-container  education-heading-container' 'education-options-container education-container';
+
+    & .education-heading-container {
+        grid-area: education-heading-container;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0.1rem solid colors.$tertiary-color;
+
+        & .education-heading {
+            color: colors.$secondary-color;
+        }
+    }
+    & .education-options-container {
+        grid-area: education-options-container;
+        & .education-options {
+            & .education-option {
+                list-style: none;
+                padding: 0.5rem;
+                border: 0.01rem solid colors.$container-background-color;
+                border-left: 0.1rem solid colors.$container-background-color;
+                &:hover {
+                    background-color: colors.$container-background-color;
+                }
+            }
+            & .education-option-selected {
+                border-left: 0.2rem solid colors.$tertiary-color;
+            }
+        }
+    }
+    & .education-container {
+        grid-area: education-container;
+        display: flex;
+        flex-direction: column;
+        & .education-header-container {
+            & .education-header {
+                color: colors.$secondary-color;
+                & .education-highlight {
+                    color: colors.$tertiary-color;
+                }
+                & .education-caption {
+                    font-style: italic;
+                }
+            }
+        }
+        & .education-description-container {
+            display: flex;
+            flex-direction: column;
+        }
+        & .education-button-container {
+            display: flex;
+            justify-content: flex-end;
+            & .education-button {
+                border: 0.1rem solid colors.$tertiary-color;
+                padding: 0.5rem;
+                color: colors.$tertiary-color;
+                &:hover {
+                    background-color: colors.$container-background-color;
+                }
+            }
+        }
+
+    }
+}
