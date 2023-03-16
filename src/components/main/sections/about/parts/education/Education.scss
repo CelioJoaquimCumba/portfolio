@@ -26,12 +26,16 @@
                 padding: 0.5rem;
                 border: 0.01rem solid colors.$container-background-color;
                 border-left: 0.1rem solid colors.$container-background-color;
+                & .education-option-container {
+                    background-color: inherit;
+                }
                 &:hover {
                     background-color: colors.$container-background-color;
                 }
             }
             & .education-option-selected {
                 border-left: 0.2rem solid colors.$tertiary-color;
+                background-color: colors.$container-background-color;
             }
         }
     }
@@ -63,6 +67,14 @@
                 color: colors.$tertiary-color;
                 &:hover {
                     background-color: colors.$container-background-color;
+                }
+            }
+            & .education-button-disabled {
+                background-color: colors.$container-background-color;
+                color: colors.$primary-color;
+                border: none;
+                &:hover {
+                    
                 }
             }
         }
