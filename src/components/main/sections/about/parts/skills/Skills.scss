@@ -35,7 +35,11 @@
                         border-width: 0 0 0.1rem 0;
                         text-align: center;
                         padding: 2rem 0;
-                        font-size: x-large;
+                        & .skills-title {
+                            color: colors.$secondary-color;
+                            font-size: x-large;
+                        
+                    }
                     }
                     & .skills-body {
                         display:flex;
