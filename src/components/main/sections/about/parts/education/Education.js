@@ -50,7 +50,7 @@ function Education() {
           <ul className="education-options">
             {educations.map(({course}, index) => {
               return (
-                <li
+                <div
                   key={course}
                   className={`education-option ${
                     course === current.course ? "education-option-selected" : ""
@@ -60,7 +60,7 @@ function Education() {
                   <div className={`education-option-container `}>
                     {course} - {current.course}
                   </div>
-                </li>
+                </div>
               );
             })
             }
