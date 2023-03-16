@@ -1,6 +1,6 @@
 import './Skills.scss'
 function Skills() {
-    const skillset = [
+    const skillSet = [
       {
         title: "Front-end Development",
         skills: [
@@ -72,7 +72,7 @@ function Skills() {
           <h1 className="skills-heading">Skills</h1>
         </div>
         <div className="skills-list">
-            { skillset.map(({skills, title}, index) => {
+            { skillSet.map(({skills, title}, index) => {
                 return (
                 <div key={title} className="skills">
                     <div className="skills-header">

@@ -1,4 +1,5 @@
 @use '../../../../../../style-variables/colors.scss' as colors;
+@use '../../../../../../style-variables/breakpoints.scss' as breakpoints;
 
 .skills-section {
     display: grid;
@@ -17,39 +18,51 @@
             color: colors.$secondary-color;
         }
     }
-    & .skills-list {
-        grid-area: skills-list;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        gap: 1rem;
-        & .skills {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            border: 0.1rem solid;
-            & .skills-header {
-                border: solid;
-                border-width: 0 0 0.1rem 0;
-                text-align: center;
-                padding: 2rem 0;
-           }
-           & .skills-body {
-                display:flex;
-                flex-direction: column;
-                justify-content: center;
-                margin: 0 auto;
-                padding: 0.5rem 0;
-                & .skill-name {
-                    color: colors.$secondary-color;
+
+        & .skills-list {
+            grid-area: skills-list;
+            align-items: flex-start;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            & .skills {
+                    display: flex;
+                    flex-direction: column;
+                    border: 0.1rem solid;
+                    margin-bottom: 1%;
+                    & .skills-header {
+                        border: solid;
+                        border-width: 0 0 0.1rem 0;
+                        text-align: center;
+                        padding: 2rem 0;
+                        font-size: x-large;
+                    }
+                    & .skills-body {
+                        display:flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        margin: 0 auto;
+                        width: 80%;
+                        padding: .5rem 0;
+                        & .skill-name {
+                            color: colors.$secondary-color;
+                        }
+                        & .skill-progress {
+                            width: 100%;
+                        }
+    
+                    }
                 }
-                
-           }
         }
+}
+@media(max-width: breakpoints.$phone-breakpoint) {
+    .skills-list {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
     }
 }
 ::-webkit-progress-bar {
-    background-color: colors.$primary-color;
+    background-color: colors.$secondary-color;
 }
 
 progress::-webkit-progress-value {
