@@ -1,0 +1,32 @@
+@use '../../../../../../style-variables/colors.scss' as colors;
+@use '../../../../../../style-variables/breakpoints.scss' as breakpoints;
+.goal-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    & .goal-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        & .goal-header {
+            font-size: xxx-large;
+            font-weight: bolder;
+        }
+        & .goal-description {
+            & .goal-highlight {
+                color: colors.$tertiary-color;
+                font-size: x-large;
+            }
+        }
+    }
+}
+@media (max-width: breakpoints.$phone-breakpoint) {
+    .goal-section {
+        & .goal-container {
+            width: 80%;
+        }
+
+    }
+}
