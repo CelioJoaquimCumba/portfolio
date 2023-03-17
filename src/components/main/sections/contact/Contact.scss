@@ -1,0 +1,39 @@
+@use '../../../../style-variables/colors.scss';
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & .contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        & .contact-header-container {
+            & .contact-header {
+                color: colors.$secondary-color;
+            }
+        }
+        & .contact-caption-container {
+            & .contact-caption {
+                text-align: center;
+            }
+        }
+        & .contact-buttons-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            & .contact-button {
+                padding: 0.5rem 1rem;
+                border: 0.1rem solid colors.$tertiary-color;
+                background-color: colors.$container-background-color;
+                & a {
+                    color: colors.$tertiary-color;
+                    background-color: inherit;
+                }
+            }
+        }
+    }
+}
