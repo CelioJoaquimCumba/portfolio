@@ -50,7 +50,12 @@ function Certifications() {
           {certifications.map((certification, index) => {
             if (index < visibleCertificates) {
               return (
-                <a key={certification.id} href={certification.certificateUrl}>
+                <a
+                  key={certification.id}
+                  href={certification.certificateUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="certification">
                     <div className="certification-icons">
                       <TbCertificate size={30} className="certification-icon" />

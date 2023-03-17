@@ -14,11 +14,23 @@ function Contact() {
           </div>
           <div className="contact-buttons-container">
             <button className="contact-button">
-              <a href="">Email me</a>
+              <a
+                href="mailto:celio.joaquim.cumba@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Email me
+              </a>
             </button>
             <p>or</p>
             <button className="contact-button">
-              <a href="">Chat on whatsapp</a>
+              <a
+                href="https://wa.me/258849383897"
+                target="blank"
+                rel="noopener noreferrer"
+              >
+                Chat on whatsapp
+              </a>
             </button>
           </div>
         </div>

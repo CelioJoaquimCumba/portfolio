@@ -9,9 +9,9 @@ function Header() {
           <img src={profile} alt="profile" className="img-fluid profile" />
           <div className="info-container">
             <h1 className="info-title">
-              <b className='tag'>{`<h1>`}</b>
+              <b className="tag">{`<h1>`}</b>
               {`Hello World`}
-              <b className='tag'>{`</h1>`}</b>
+              <b className="tag">{`</h1>`}</b>
             </h1>
             <p className="info-paragraph">
               Hello and welcome to my portfolio! My name is Celio Joaquim Cumba,
@@ -31,17 +31,29 @@ function Header() {
             </ul>
             <ul className="social-links">
               <li className="social-link">
-                <a href="https://github.com/CelioJoaquimCumba">
+                <a
+                  href="https://github.com/CelioJoaquimCumba"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <BsGithub />
                 </a>
               </li>
               <li className="social-link">
-                <a href="https://www.linkedin.com/in/celio-cumba/?">
+                <a
+                  href="https://www.linkedin.com/in/celio-cumba/?"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <BsLinkedin />
                 </a>
               </li>
               <li className="social-link">
-                <a href="https://www.instagram.com/celio.cumba/">
+                <a
+                  href="https://www.instagram.com/celio.cumba/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <BsInstagram />
                 </a>
               </li>

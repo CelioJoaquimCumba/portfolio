@@ -7,14 +7,24 @@ function Footer() {
           <p className="footer-caption">
             Designed and built by
             <b className="footer-highlight">
-              <a href="https://www.linkedin.com/in/celio-cumba/">
+              <a
+                href="https://www.linkedin.com/in/celio-cumba/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Célio Joaquim Cumba
               </a>
             </b>
           </p>
           <p className="footer-caption">
             Inspired by
-            <a href="https://brittanychiang.com/">Brittany Chiang</a>
+            <a
+              href="https://brittanychiang.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Brittany Chiang
+            </a>
           </p>
         </CodeTag>
       </footer>
