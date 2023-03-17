@@ -4,39 +4,52 @@ import { useState } from 'react';
 function Certifications() {
     const certifications = [
       {
-        id: 0,
-        name: "Machine learning",
-        description:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, culpa blanditiis quo maxime nulla eos harum quis numquam, ducimus laborum ea quaerat eligendi ratione repellat, saepe consectetur provident possimus architecto.",
-        certificateUrl: "",
-      },
-      {
         id: 1,
-        name: "certification 2",
+        name: "Introduction to Front-end Development",
         description:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, culpa blanditiis quo maxime nulla eos harum quis numquam, ducimus laborum ea quaerat eligendi ratione repellat, saepe consectetur provident possimus architecto.",
-        certificateUrl: "",
+          "Coursera Meta's Introduction to Front-end Development course is a beginner-friendly introduction to building web applications. Students will learn about HTML, CSS, and JavaScript, as well as responsive design, accessibility, and web performance. Through hands-on exercises and projects, students will gain practical experience creating their own web pages and user interfaces.",
+        certificateUrl:
+          "https://www.coursera.org/account/accomplishments/certificate/R45Z8JSCSTZ2",
       },
       {
         id: 2,
-        name: "certification 3",
+        name: "Programming with JavaScript",
         description:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, culpa blanditiis quo maxime nulla eos harum quis numquam, ducimus laborum ea quaerat eligendi ratione repellat, saepe consectetur provident possimus architecto.",
-        certificateUrl: "",
+          "Coursera Meta's Programming with JavaScript course is an in-depth exploration of the JavaScript language. Students will learn about data types, control structures, functions, and more. Through a series of coding challenges and projects, students will build their coding skills and gain experience creating complex applications with JavaScript.",
+        certificateUrl:
+          "https://www.coursera.org/account/accomplishments/certificate/5DH7844LCZ8B",
       },
       {
         id: 3,
-        name: "certification 4",
+        name: "Version Control",
         description:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, culpa blanditiis quo maxime nulla eos harum quis numquam, ducimus laborum ea quaerat eligendi ratione repellat, saepe consectetur provident possimus architecto.",
-        certificateUrl: "",
+          "Coursera Meta's Version Control course teaches students how to use Git, a powerful version control system for tracking changes to code and documents. Through practical exercises and projects, students will learn how to collaborate with others, track changes over time, and manage conflicts. By the end of the course, students will be able to use Git to manage their own projects effectively.",
+        certificateUrl:
+          "https://www.coursera.org/account/accomplishments/certificate/Q9W2MZHPJ9LG",
       },
       {
         id: 4,
-        name: "certification 5",
+        name: "Learn HTML and CSS in Depth",
         description:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, culpa blanditiis quo maxime nulla eos harum quis numquam, ducimus laborum ea quaerat eligendi ratione repellat, saepe consectetur provident possimus architecto.",
-        certificateUrl: "",
+          "Coursera Meta's Learn HTML and CSS in Depth course is a comprehensive introduction to these fundamental web development technologies. Students will learn about HTML tags, CSS selectors, layout techniques, and more. Through a series of interactive exercises and projects, students will gain practical experience creating beautiful and responsive web pages.",
+        certificateUrl:
+          "https://www.coursera.org/account/accomplishments/certificate/UATNJSTXTBZB",
+      },
+      {
+        id: 5,
+        name: "React Basics",
+        description:
+          "Coursera Meta's React Basics course teaches the fundamentals of building web applications with React, a popular JavaScript library. Through hands-on exercises and projects, students will learn about component structure, JSX syntax, state management, and more. By the end of the course, students will have a strong foundation in React development and be able to create dynamic and responsive user interfaces.",
+        certificateUrl:
+          "https://www.coursera.org/account/accomplishments/certificate/XPAVNHDAAAGB",
+      },
+      {
+        id: 6,
+        name: "Machine Learning",
+        description:
+          "Coursera Meta's Machine Learning course is an introduction to the field of machine learning, including topics such as linear regression, logistic regression, neural networks, and more. Students will gain practical experience with real-world datasets and learn how to train and evaluate machine learning models. By the end of the course, students will have a strong foundation in machine learning and be able to apply these techniques to their own projects.",
+        certificateUrl:
+          "https://www.coursera.org/account/accomplishments/certificate/MRMTWL2SJAQN",
       },
     ];
     const [visibleCertificates, setVisibleCertificates] = useState(4);
