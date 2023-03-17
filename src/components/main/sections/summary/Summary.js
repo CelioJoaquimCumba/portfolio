@@ -41,16 +41,16 @@ function Summary() {
             <li className="summary-item">
               <a href="./#contact">Contact</a>
             </li>
-            <ol className="summary-sub-items" type="a">
+            {/* <ol className="summary-sub-items" type="a">
               <li className="summary-sub-item">
                 <a href="./#email">Email</a>
               </li>
               <li className="summary-sub-item">
                 <a href="./#whatsapp">Whatsapp</a>
               </li>
-            </ol>
+            </ol> */}
             <li className="summary-item">
-              <a>Footer</a>
+              <a href='./#footer'>Footer</a>
             </li>
           </ol>
         </div>
