@@ -5,7 +5,7 @@ import Certifications from './parts/certifications/Certifications';
 import Goals from './parts/goals/Goals';
 function About() {
     return (
-      <div id="about me">
+      <div id="about">
         <Skills />
         <Education />
         <Certifications />

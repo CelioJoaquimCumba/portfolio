@@ -7,8 +7,8 @@ function Navbar() {
         <ul className="nav-items">
           {[
             "summary",
-            "about me",
-            "contact  me",
+            "about",
+            "contact",
           ].map((item, index) => (
             <li className="nav-item" key={index}>
               <a className='nav-link' href={`./#${item}`}>{item}</a>

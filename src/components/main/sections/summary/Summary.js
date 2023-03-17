@@ -22,7 +22,7 @@ function Summary() {
             </li>
 
             <li className="summary-item">
-              <a href="./#about me">About me</a>
+              <a href="./#about">About me</a>
               <ol className="summary-sub-items" type="a">
                 <li className="summary-sub-item">
                   <a href="./#skills">Skills</a>
