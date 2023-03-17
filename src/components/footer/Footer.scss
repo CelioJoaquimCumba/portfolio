@@ -1,0 +1,16 @@
+@use '../../style-variables/colors.scss' as colors;
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & .footer-caption{
+        & .footer-highlight {
+            color:colors.$tertiary-color;
+        }
+        & a {
+            color: inherit;
+            text-decoration: underline;
+        }
+    }
+}
