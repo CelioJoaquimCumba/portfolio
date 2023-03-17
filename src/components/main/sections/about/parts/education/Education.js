@@ -83,7 +83,7 @@ function Education() {
             })}
           </div>
           <div className="education-button-container">
-            <button  className={`education-button ${current.certificateUrl.trim() === '' ? 'education-button-disabled' : ''}`}>Show Certificate</button>
+            {current.certificateUrl.trim() !== '' ?<button  className={`education-button`}>Show Certificate</button> : ''}
           </div>
         </div>
       </div>
