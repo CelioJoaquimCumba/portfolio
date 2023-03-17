@@ -8,8 +8,6 @@
   background-color: colors.$background-color;
   box-sizing: border-box;
 }
-body {
-}
 body main, body footer, body header, .divider {
   max-width: breakpoints.$max-container;
   margin: auto auto;
