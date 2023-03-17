@@ -31,8 +31,16 @@ function Certifications() {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, culpa blanditiis quo maxime nulla eos harum quis numquam, ducimus laborum ea quaerat eligendi ratione repellat, saepe consectetur provident possimus architecto.",
         certificateUrl: "",
       },
+      {
+        id: 4,
+        name: "certification 5",
+        description:
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, culpa blanditiis quo maxime nulla eos harum quis numquam, ducimus laborum ea quaerat eligendi ratione repellat, saepe consectetur provident possimus architecto.",
+        certificateUrl: "",
+      },
     ];
-    const [visibleCertificates, setVisibleCertificates] = useState(4)
+    const [visibleCertificates, setVisibleCertificates] = useState(4);
+    const numberOfMoreVisibleCertificates = 4;
     return (
       <div className="certifications-section">
         <div className="certifications-heading-container">
@@ -67,6 +75,12 @@ function Certifications() {
             }
             return null;
           })}
+        </div>
+        <div className="certifications-button-container">
+          {certifications.length > visibleCertificates ? (
+            <button className="certifications-button" onClick={()=> setVisibleCertificates(prev => prev+ numberOfMoreVisibleCertificates)}>show more</button>
+          ) : 
+            ""}
         </div>
       </div>
     );
