@@ -5,6 +5,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import Main from './components/main/Main';
 import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header/>
       <hr className='divider'/>
       <Main/>
+      <Footer/>
     </div>
   );
 }
