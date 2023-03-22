@@ -45,6 +45,14 @@ function Certifications() {
       },
       {
         id: 6,
+        name: "React Advanced",
+        description:
+          "Coursera Meta's React Advanced course is designed for developers who have a solid foundation in React and want to take their skills to the next level. In this course, students will learn advanced topics such as performance optimization, server-side rendering, code splitting, and Redux state management.",
+        certificateUrl:
+          "https://www.coursera.org/account/accomplishments/certificate/Q9W2MZHPJ9LG",
+      },
+      {
+        id: 7,
         name: "Machine Learning",
         description:
           "Coursera Meta's Machine Learning course is an introduction to the field of machine learning, including topics such as linear regression, logistic regression, neural networks, and more. Students will gain practical experience with real-world datasets and learn how to train and evaluate machine learning models. By the end of the course, students will have a strong foundation in machine learning and be able to apply these techniques to their own projects.",
