@@ -1,3 +1,7 @@
-.code-tag-content {
-    padding-left: 1rem;
+@use '../../style-variables/breakpoints.scss' as breakpoints;
+
+@media(min-width: breakpoints.$phone-breakpoint) {
+    .code-tag-content {
+        padding-left: 1rem;
+    }
 }
