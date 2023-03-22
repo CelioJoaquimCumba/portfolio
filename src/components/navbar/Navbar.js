@@ -31,7 +31,12 @@ function Navbar() {
             Contact me
           </NavDropdown.Item>
           <NavDropdown.Divider />
-          <NavDropdown.Item className="nav-item" href="/resume">
+          <NavDropdown.Item
+            className="nav-item"
+            href="https://drive.google.com/file/d/1cxIWtSj4mL9YnrWMwZlAg4fM1-eoUeTm/view"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Resume
           </NavDropdown.Item>
         </NavDropdown>
