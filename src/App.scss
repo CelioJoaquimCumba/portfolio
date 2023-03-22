@@ -8,10 +8,19 @@
   background-color: colors.$background-color;
   box-sizing: border-box;
 }
-body main, body footer, body header, .divider {
-  max-width: breakpoints.$max-container;
-  margin: auto auto;
-}
 .divider {
   color: colors.$tertiary-color;
+}
+
+body main,
+body footer,
+body header,
+.divider {
+  margin:0rem 1rem;
+}
+@media(min-width: breakpoints.$max-container) {
+  body main, body footer, body header, .divider {
+    max-width: breakpoints.$max-container;
+    margin: auto auto;
+  }
 }
