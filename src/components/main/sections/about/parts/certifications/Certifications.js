@@ -53,6 +53,14 @@ function Certifications() {
       },
       {
         id: 7,
+        name: "Principles of UI/UX Design",
+        description:
+          "This course covers the fundamental principles of user interface and user experience design. Students will learn about user research, wireframing, prototyping, and usability testing, and gain hands-on experience designing interfaces for different platforms and devices. By the end of the course, students will have a strong foundation in UI/UX design and be able to create intuitive and engaging interfaces that meet user needs.",
+        certificateUrl:
+          "https://www.coursera.org/account/accomplishments/certificate/B27Q59Q9UKEX",
+      },
+      {
+        id: 8,
         name: "Machine Learning",
         description:
           "Coursera Meta's Machine Learning course is an introduction to the field of machine learning, including topics such as linear regression, logistic regression, neural networks, and more. Students will gain practical experience with real-world datasets and learn how to train and evaluate machine learning models. By the end of the course, students will have a strong foundation in machine learning and be able to apply these techniques to their own projects.",
