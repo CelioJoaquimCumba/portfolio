@@ -3,6 +3,7 @@ import './Main.scss'
 import About from "./sections/about/About";
 import Contact from "./sections/contact/Contact";
 import Summary from "./sections/summary/Summary";
+
 function Main() {
     return (
       <main>

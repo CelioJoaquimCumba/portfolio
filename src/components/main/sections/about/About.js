@@ -2,6 +2,7 @@ import './About.scss';
 import Skills from './parts/skills/Skills';
 import Education from './parts/education/Education';
 import Certifications from './parts/certifications/Certifications';
+import Projects from './parts/projects/Projects';
 import Goals from './parts/goals/Goals';
 function About() {
     return (
@@ -9,6 +10,7 @@ function About() {
         <Skills />
         <Education />
         <Certifications />
+        <Projects />
         <Goals />
       </div>
     );
